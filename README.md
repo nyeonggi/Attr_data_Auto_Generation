@@ -73,11 +73,11 @@ one's face should be in view
 blinkshot_crawling.py을 이용하여 blinkshot.io를 crawling하여 이미지 생성 및 저장  
 1. https://www.blinkshot.io/ 이동하여 회원가입/로그인 후 API키 발급<br><br>
 2. .env파일 생성후 API키 입력 -> TOGETHER_API_KEY=<api key><br><br>
-3. blingshot_crawling.py 실행 시, 1차적으로 **성별, 연령, 헤어 스타일, 상의 종류, 하의 종류, 소지품**를 입력해야 함  
+3. blingshot_crawling.py 실행 시, 1차적으로 **성별, 연령, 헤어 스타일, 상의 종류, 하의 종류, 소지품**를 선택해야 함  
 *해당 속성은 일반적인 입력을 요구 (남자+짧은치마X)*<br><br>
 4. 입력한 값을 바탕으로 **상의 색상, 하의 색상, 신발 색상, 신발 종류**을 각 각의 속성들이 1대1 매핑되게 for문을 이용하여 사진 생성  
 *기본적으로 색상은 11가지 전부 들어가있고 필요할 경우 코드 내부의 {top_colors}, {bottom_colors}, {shoes_colors}를 수정*<br><br>
-5. 생성된 파일명은 성별_연령_헤어스타일_상의종류_하의종류_상의색상_하의색상_신발색상_신발종류_소지품_num.jpg 형식으로 저장됨  
+5. 생성된 파일명은 <br>성별_연령_헤어스타일_상의종류_하의종류_상의색상_하의색상_신발색상_신발종류_소지품_num.jpg 형식으로 저장됨  
 *->이 후에 파일명을 parsing하여 json파일로 저장함, auto_labelling하기위한 작업*<br><br>
   
 ## Preprocessing
