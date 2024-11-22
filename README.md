@@ -1,4 +1,4 @@
-# Attr_Data_Generation
+# Attr_Data__Auto_Generation
 ## Person Attribute Image Auto-Generation, Auto-Preprocessing, Auto-Labelling
 
 3단계에 걸쳐 진행
